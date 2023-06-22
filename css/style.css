@@ -1,0 +1,1257 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+body{
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+:root{
+	--primarty-color:rgba(240, 160, 0, 1) ;
+	--secondary-color: hsla(188, 100%, 53%, 1);
+}
+
+/*Start Header Section*/
+
+header{
+	height: 90vh;
+    /*background: linear-gradient(to left,var(--secondary-color),var(--primarty-color));*/
+    background: linear-gradient(to left,#96E5D1,#E38B29);
+}
+
+.notis{
+	background: var(--secondary-color);
+	padding: 5px;
+}
+ header .infos{
+ 	display: flex;
+ 	justify-content: center;
+ 	font-size: 16px;
+ 	font-weight: bold;
+    letter-spacing: 1px;
+ }
+
+ .navbar{
+ 	background:white;
+    padding: 1px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+ }
+
+ .logtt{
+ 	color: var(--secondary-color);
+ }
+
+ .logt{
+ 	color: var(--primarty-color);
+ }
+
+  .lines1,.lines2,.lines3{
+  width: 17px;
+  height: 3px;
+  margin: 3px;
+  background:black;
+ }
+
+ .but{
+ 	margin-right: 20px;
+ }
+
+ .but:focus{
+ 	box-shadow: none;
+ }
+
+ .but:active{
+  border: none;
+ }
+
+ .butj .lines1{
+   transform: rotate(45deg) translate(4px,4px);
+ }
+
+ .butj .lines2{
+ 	opacity: 0;
+ }
+
+
+.butj .lines3{
+ 	transform: rotate(-45deg) translate(4px,-5px);
+ }
+
+ .menus{
+ 	font-size:14px;
+ 	color: #000;
+ 	font-weight: 800;
+ 	letter-spacing: 1px;
+ 	margin-right: 58px;
+
+ }
+
+ .navs ul i{
+ /*	margin-right: 10px;*/
+ 	text-align: center;
+ 	display: block;
+ 	font-size:25px;
+ 	color:gray;
+ }
+  
+  .navs .menus:hover i{
+   color:var(--primarty-color);
+  }
+
+  .navs .menus:hover{
+  	color: var(--primarty-color);
+  }
+
+
+
+ .banners{
+	width: 90%;
+ 
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	transform: translate(-50%,-40%);
+	position: relative;
+}
+
+.aaa .aptb:hover{
+  background: white;
+  color:black;
+}
+
+.aaa .aptd:hover{
+  background: white;
+  color: #000;
+}
+
+.nameains{
+	color: transparent;
+	font-size:50px ;
+	letter-spacing: 7px;
+
+	white-space: nowrap;
+}
+
+.nameains:before{
+	content:"Ms THIN MYAT...";
+	width: 0;
+	color:yellow;
+	border-right: 5px solid yellow;
+	position: absolute;
+	top: 5px;
+	left:8% ;
+    animation: myani 10s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes myani{
+	0%{
+		width: 0;
+	}
+	50%{
+		width: 450px;
+	}
+	100%{
+		width: 0;
+	}
+}
+
+.rr{
+	display: flex;
+}
+
+.cir{
+	width: 80px;
+	height: 80px;
+	/*background:url('./assets/img/founder/img1.png');*/
+	background:#f4f4f4;
+	border-radius: 50%;
+     opacity: 0.7;
+	position: absolute;
+	top: -6%;
+	left: 54.9%;
+	
+	animation: zzz 2s linear  infinite;
+
+}
+ @keyframes zzz{
+ 	from{
+    transform: rotate(0deg);
+ 	}
+ 	to{
+   transform: rotate(360deg);
+ 	}
+ }
+
+
+.cir1{
+	width: 1px;
+	height: 150px;
+	background: white;
+	
+	position: absolute;
+	top: -75%;
+	left: 58%;
+}
+
+.cir2{
+	width:0.1px;
+	height: 150px;
+	background:white;
+	
+
+	position: absolute;
+	top: 34%;
+	left: 58%;
+}
+
+.fimg{
+	 width: 48%;
+    
+		position: absolute;
+ 	    bottom:-2px;
+ 	     right: 0px;
+ 	     animation: zz 6s;
+}
+
+@keyframes zz{
+	from{
+   transform: translateX(150px);
+   opacity: 0;
+	}
+	to{
+   transform: translateX(0);
+   opacity: 1;
+	}
+}
+
+
+/*End Header Section*/
+
+/*Start Animal Section*/
+.containers {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5),skyblue);
+  height: 115vh;
+}
+
+.wave {
+  position: absolute;
+  height: 111px;
+  width: 98.5%;
+  background-color: skyblue;
+  bottom: 0;
+}
+
+.wave::before, .wave::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50% 100%;
+}
+
+.wave::before {
+  width: 55%;
+  height: 100%;
+  background-color: skyblue;
+  right: -1.5%;
+  top: 40%;
+}
+.wave::after {
+  width: 55%;
+  height: 109%;
+  background-color: #fff;
+  left: -1.5%;
+  top: 60%;
+}
+.cards{
+	margin-top: 5px;
+	position: relative;
+}
+
+.tit{
+	letter-spacing: 2px;
+
+}
+
+.p1{
+	color: var(--primarty-color);
+	position: absolute;
+	top: 1.8%;
+	left: 41%;
+	opacity: 0;
+	transform: rotate(-45deg);
+	transition: all .5s;
+}
+
+.p2{
+	font-size: 25px;
+	color: var(--primarty-color);
+	position: absolute;
+	top: 1.5%;
+	left: 44%;
+	transform: rotate(45deg);
+	opacity:0;
+	transition: all 1s;
+}
+
+.p3{
+	color: var(--primarty-color);
+	position: absolute;
+	top: 3.5%;
+	left: 60.2%;
+	transform: rotate(45deg);
+	opacity: 0;
+	transition: all 1.5s;
+}
+
+.tit:hover .p1{
+	opacity: 1;
+}
+.tit:hover .p2{
+	opacity: 1;
+	
+}
+
+.tit:hover .p3{
+	opacity: 1;
+	
+}
+
+
+.card{
+	position: relative;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+	transition: all .5s;
+}
+
+.card img{
+	object-fit: cover;
+}
+
+.card:hover{
+	transform: translateY(-10px);
+}
+
+.adt{
+	position: absolute;
+	bottom:55.5%;
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	width: 100%;
+	letter-spacing:2px;
+	text-align: center;
+	padding: 6px;
+}
+
+.heart{
+	font-size: 25px;
+	color: red;
+	position: absolute;
+	bottom: 15px;
+	right: 20px;
+	animation: hea 1s infinite linear;
+	cursor:pointer;
+}
+
+@keyframes hea{
+	from{
+     transform: scale(1);
+	}
+	to{
+     transform: scale(1.3);
+	}
+}
+
+/*End Animal Section*/
+
+
+/*Start Volun Section*/
+
+.vlu{
+	margin-top: 50px;
+}
+
+.vlup .vlupp i{
+	color:deepskyblue;
+	/*transition: all 3s;*/
+	animation: z 10s linear infinite  ;
+}
+
+
+@keyframes z{
+	0%{
+   transform: translate(0,0);
+	}
+	50%{
+    transform: translate(450px,-100px) rotate(50deg);
+	}
+	98%{
+     transform: translate(900px,360px) rotate(130deg);
+     opacity: 0;
+	}
+	
+	100%{
+    transform: translate(0,0)  ;
+    opacity: 0;
+ 
+	}
+
+}
+
+.vlul{
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.volf .form-control{
+	border: none;
+	border-bottom: 3px solid var(--primarty-color);
+	transition: all .5s;
+
+}
+
+.volf .form-control:focus{
+	border-bottom: 3px solid var(--secondary-color);
+	box-shadow: none;
+}
+
+.spf .form-control{
+	border: none;
+	border-bottom: 3px solid var(--secondary-color);
+	transition: all .5s;
+}
+
+.spf .form-control:focus{
+	box-shadow: none;
+	border-bottom: 3px solid var(--primarty-color);
+}
+
+.follow h3{
+
+	letter-spacing: 5px;
+	color: var(--primarty-color);
+}
+
+.follow .fb{
+	color:#1D4ED8;
+
+}
+
+.follow .tw{
+	color: #0EA5E9;
+}
+
+.follow .int{
+	color:#BE123C;
+}
+
+.follow .yt{
+	color: red;
+}
+
+.follow .yt:hover,.int:hover,.fb:hover,.tw:hover{
+		animation: icons .4s infinite linear ;
+}
+
+.orr{
+  position: relative;
+}
+
+.line1{
+  width: 100px;
+  height: 1px;
+  background:rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top:15px;
+  left: 80px;
+}
+
+.line2{
+ width: 100px;
+  height: 1px;
+   background:rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 15px;
+  right: 80px;
+}
+
+@keyframes icons{
+	0%{
+   transform: translateX(0);
+	}
+	50%{
+   transform: translateX(8px);
+
+	}
+	100%{
+		transform: translateX(0);
+	}
+}
+
+.spg{
+	position: relative;
+}
+
+.spi{
+	font-size: 35px;
+	letter-spacing: 2px;
+	font-family: 'Romanesco', cursive;
+	
+}
+
+.spi::before{
+	content: "";
+	width: 20%;
+	height: 20%;
+	border-top: 1px solid rgba(0, 0, 0, 0.6);
+
+	position: absolute;
+	top:0 ;
+	left: 0;
+
+	transition: all .5s;
+}
+
+.spi:hover::before{
+ left: 80%;
+}
+
+.spi::after{
+	content: "";
+	width: 20%;
+	height: 20%;
+	/*border-top: 1px solid rgba(0, 0, 0, 0.6);*/
+	border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+
+	position: absolute;
+	bottom:-8px ;
+	right: 0;
+
+	transition: all .5s;
+}
+
+.spi:hover::after{
+	right: 80%;
+}
+
+
+/*End Volun Section*/
+
+/*Start Doctor Section*/
+
+.doctors{
+	background:#b7f4f3;
+	position: relative;
+}
+
+.docp{
+	/*position: absolute;
+	top: 55%;
+	left: 50%;
+
+	transform: translate(-50px,-50px);*/
+
+	margin-top: 170px;
+}
+
+.mm{
+	margin-left: 100px;
+	margin-bottom: -49px;
+}
+
+.dtop,.doc{
+  animation-name: tops;
+  animation-duration: 5s;
+}
+
+@keyframes tops{
+	from{
+    transform: translateY(-50px);
+    opacity: 0;
+	}
+	to{
+    transform: translateY(0px);
+    opacity: 1;
+	}
+}
+
+.dp1,.doc1{
+  animation: one 3s ;
+}
+
+.dp2,.doc2{
+  animation: one 5s ;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+
+.dp3,.doc3{
+  animation: one 6s ;
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+
+}
+
+
+@keyframes one{
+	from{
+    transform: translateY(100px);
+    opacity: 0;
+	}
+	to{
+    transform: translateY(0px);
+    opacity: 1;
+	}
+}
+
+
+.btd,.btdd{
+ animation: bt 7s;
+  animation-delay: 3s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes bt{
+	from{
+    transform: translateY(100px);
+    opacity: 0;
+	}
+	to{
+    transform: translateY(0px);
+    opacity: 1;
+	}
+}
+/*End Doctor Section*/
+
+/*Start Contact Section*/
+
+.conts{
+
+	background :url("../assets/img/dogo.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.form-control{
+	background: transparent;
+	border: transparent;
+	border-bottom: 3px solid #f4f4f4;
+
+}
+
+.form-control:focus{
+	background: none;
+	border: none;
+	box-shadow: none;
+	border-bottom: 2px solid #f6f6f6;
+}
+
+.ph{
+	margin-left:20px;
+	animation: p .2s infinite linear;
+	color: green;
+}
+
+
+
+
+
+.li1{
+	width: 20px;
+	/*height: 3px;*/
+	background: transparent;
+	border: 1px solid white;
+	color: transparent;
+	border-radius: 20px;
+	border-bottom: hidden;
+	/*border-top: hidden;
+*/	border-right: hidden;
+	border-left: hidden;
+
+	position: absolute;
+	top: -9%;
+	left: 56%;
+
+	transform: rotate(-45deg);
+
+	animation: ph 2s infinite ease-in;
+}
+
+
+.li1::before{
+	content: "";
+	width: 140%;
+	height: 100%;
+		border: 1px solid white;
+		border-radius: 20px;
+			border-bottom: hidden;
+	/*border-top: hidden;
+*/	border-right: hidden;
+	border-left: hidden;
+	
+
+	position: absolute;
+	top: -12px;
+	left: -4px;
+
+	animation: phs .8s infinite ease-in ;
+	
+
+}
+
+@keyframes ph{
+	from{
+  transform: translate(12px,8px) rotate(-45deg);
+	}
+	to{
+    transform: translate(-55px,-20px) rotate(-45deg);
+    opacity: 0;
+	}
+}
+
+
+@keyframes phs{
+	from{
+  transform: scale(0);
+	}
+	to{
+    transform: scale(1.5);
+	}
+}
+
+@keyframes p{
+	from{
+  transform: translate(0,0);
+	}
+	to{
+    transform: translate(1px,1px);
+   
+	}
+}
+
+
+/*End Contact Section*/
+
+/*Start Sponsor Section*/
+
+
+.vips{
+  margin-left: 50px;
+  margin-top: 100px;
+	padding: 0 0 0 10px;
+	border-left: 5px solid green;
+	display: flex;
+
+}
+
+.spp{
+	margin-left: 50px;
+}
+
+
+
+.spt a{
+	text-decoration: none;
+	color: #000;
+
+}
+
+.spt .sptp{
+	margin-left: 250px;
+}
+
+.spt .sptm{
+	margin-left: 20px;
+}
+
+.dog1{
+	transform: scale(0.8);
+	transition: all .5s;
+}
+
+.dog1:hover{
+	transform: scale(1);
+}
+
+.cat1{
+	transform: scale(0.8);
+	transition: all .5s;
+}
+
+.cat1:hover{
+	transform: scale(1);
+}
+
+/*End Sponsor Section*/
+
+/*Start Pyament Section*/
+/*
+.payments{
+	background:#999;
+	height: 30vh;
+}
+
+.yus{
+	display:inline-block;
+	margin-top: -50px;
+	font-size: 30px;
+	letter-spacing: 2px;
+	border-right: 5px solid red;
+	padding:10px 20px;
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.7);
+}
+
+.banks img{
+	transition: all .5s;
+	transform: scale(0.8);
+}
+
+.banks img:hover{
+	transform:scale(1);
+}
+*/
+/*End Pyament Section*/
+
+/*Start Accessories Section*/
+
+.access{
+	background: #f4f4f4;
+}
+
+.sign{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.dec,.incr{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 28px;
+	background: steelblue;
+
+   color:#fff;
+   font-size: 20px;
+	text-decoration: none;
+	font-weight: bold;
+	cursor: pointer;
+	margin: 0 5px;
+}
+
+.result{
+	font-size: 25px;
+}
+
+.dt{
+	position:relative;
+}
+
+.dt::before{
+	font-size: 18px;
+	content: "Thank You";
+	width: 100%;
+	height: 100%;
+	text-align: center;
+
+
+	position: absolute;
+	top: 3px;
+	left:0;
+
+	transform: translateX(100%);
+	color:#fff;
+	transition: all .3s;
+}
+
+.dt:active::before{
+	transform: translateX(0);
+}
+
+.ass{
+	object-fit: cover;
+}
+
+.dt:active{
+	color: transparent;
+}
+
+.boxes{
+	display: inline-block;
+	padding:35px 90px;
+	border: 1px solid #555;
+	border-radius: 20px;
+	box-shadow: 3px 10px 10px rgba(0, 0, 0, 0.5);
+
+	position: relative;
+}
+
+.txts{
+	font-size: 21px;
+	font-weight: 100px;
+	letter-spacing: 3px;
+}
+
+.btt{
+	position: absolute;
+	bottom:-20px;
+	right: 10px;
+}
+
+/*End Accessories Section*/
+
+/*Start Poem Section*/
+
+.poems{
+	background:rgba(0, 0, 0, 0.8);
+
+}
+
+.car{
+	letter-spacing: 1px;
+	font-size: 16px;
+}
+
+.ccc{
+	position: relative;
+}
+
+.ccc::before{
+	content: "";
+	width: 5%;
+	height:2%;
+	background-color: white;
+
+	position: absolute;
+	top: 0%;
+	left: 63%;
+}
+
+.ccc:hover::before{
+   background: green;
+   width: 2%;
+}
+
+
+.ccc::after{
+	content: "";
+	width: 5%;
+	height:5%;
+	background-color: white;
+
+	position: absolute;
+	bottom: 0%;
+	right: 63%;
+}
+
+.ccc:hover::after{
+	background-color: green;
+	width: 2%;
+}
+
+.fa-quote-left,.fa-quote-right{
+	font-size: 20px;
+}
+
+.pens{
+  animation: penss 1s infinite linear alternate-reverse;
+}
+
+@keyframes penss{
+	0%{
+   transform: translate(-6px,-4px);
+	}
+
+	50%{
+		transform: translate(4px,-3px);
+	}
+
+	75%{
+    transform: translate(2px,-1px);
+	}
+	100%{
+   transform: translate(0px,0px);
+	}
+}
+
+/*End Poem Section*/
+
+.footerlinks{
+	text-decoration: none;
+	color: #fff;
+}
+
+.footerlinks:hover{
+	color: gold;
+	border-bottom: 1px solid gold;
+	letter-spacing: 2px;
+}
+
+.ft{
+margin-left:520px;
+}
+
+
+.accordion{
+	width: 100%;
+
+}
+
+.acctitle{
+	background: #777;
+	color: #fff;
+	font-size: 18px;
+	user-select: none; /*user cannot select*/
+	padding: 15px;
+	margin-left: 0;
+	cursor: pointer;
+	letter-spacing: 1px;
+	border-radius: 10px;
+
+}
+
+.acctitle:hover,.act{
+	background: steelblue;
+}
+
+.acctitle::after{
+	font-family: "Font Awesome 5 Free";
+	content : "\f067";
+	font-weight: 550;
+	float: right;
+	line-height: 20px;
+
+
+}
+
+.acctitle i{
+	margin-right: 10px;
+}
+
+.act::after{
+	font-family: "Font Awesome 5 Free";
+	content : "\f068";
+	font-weight: 550;
+	float: right;
+	line-height: 20px;
+}
+
+.accontent{
+	height: 0;
+	overflow: hidden;
+	background: #f4f4f4;
+	text-indent: 20px;
+	text-align: justify;
+	font-size: 16px;
+	padding: 5px 20px;
+	transition: all .5s;
+
+}
+
+
+
+
+
+
+
+
+@media(max-width: 768px){
+	
+ .menus{
+ 	font-size:14px;
+ 	color: #000;
+ 	font-weight: 800;
+ 	letter-spacing: 1px;
+ 	
+
+ }
+
+ .bannerparagraph{
+ 	font-size: 16px;
+ }
+
+ .navs ul i{
+ 	/*margin-left: 10px;*/
+ 	text-align: center;
+ /*	display: block;*/
+ 	font-size:20px;
+ /*	color:green;*/
+ 	margin-left: -390px;
+ }
+
+ .cir,.cir1,.cir2{
+ 	display: none;
+ }
+
+ .nameains{
+	color: transparent;
+	font-size:40px ;
+	letter-spacing: 5px;
+
+	white-space: nowrap;
+}
+
+ .nameains:before{
+	content:"Ms THIN MYAT...";
+	width: 0;
+	color:yellow;
+	border-right: 5px solid yellow;
+	position: absolute;
+	top: 3px;
+	left:15% ;
+    animation: myani 10s linear infinite;
+    overflow: hidden;
+}
+
+@keyframes myani{
+	0%{
+		width: 0;
+	}
+	100%{
+		width: 350px;
+        opacity: 0.3;
+	}
+	/*100%{
+		width: 0;
+	}*/
+}
+
+header{
+    background: linear-gradient(45deg,var(--secondary-color),var(--primarty-color));
+}
+
+
+.fimg{
+	 width:150px;
+	 height: 150px;
+	 border-radius: 50%;
+	 background: rgba(0, 0, 0, 0.1);
+	 border: 1px solid #f4f4f4;
+ 
+ 	    bottom:330px;
+ 	    right:200px;
+
+}
+
+
+
+.aaa{
+	margin-top: 70px;
+}
+
+.aptd{
+	width:145px;
+	font-size: 15px;
+}
+
+.aptb{
+	font-size: 15px;
+	width: 145px;
+	margin-left: 70px;
+}
+
+.p1{
+	color: var(--primarty-color);
+	position: absolute;
+	top:0.5%;
+	left: 29%;
+	opacity: 0;
+	transform: rotate(-45deg);
+	transition: all .5s;
+}
+
+.p2{
+	font-size: 25px;
+	color: var(--primarty-color);
+	position: absolute;
+	top: .4%;
+	left: 36%;
+	transform: rotate(45deg);
+	opacity:0;
+	transition: all 1s;
+}
+
+.p3{
+	color: var(--primarty-color);
+	position: absolute;
+	top: 1%;
+	left: 74%;
+	transform: rotate(45deg);
+	opacity: 0;
+	transition: all 1.5s;
+}
+
+.adt{
+	position: absolute;
+	bottom:53.4%;
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	width: 100%;
+	letter-spacing:2px;
+	text-align: center;
+	padding: 6px;
+}
+
+.containers {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5),skyblue);
+  height: 380vh;
+}
+
+.wave {
+  position: absolute;
+  height: 111px;
+  width: 98.5%;
+  background-color: skyblue;
+  bottom: 0;
+}
+
+.wave::before, .wave::after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 50% 100%;
+}
+
+.wave::before {
+  width: 55%;
+  height: 100%;
+  background-color: skyblue;
+  right: -1.5%;
+  top: 40%;
+}
+.wave::after {
+  width: 55%;
+  height: 109%;
+  background-color: #fff;
+  left: -1.5%;
+  top: 60%;
+}
+
+ /*aeroplane*/
+@keyframes z{
+	0%{
+   transform: translate(0,0);
+	}
+	50%{
+    transform: translate(250px,-80px) rotate(50deg);
+	}
+	98%{
+     transform: translate(800px,100px) rotate(130deg);
+     opacity: 0;
+	}
+	
+	100%{
+    transform: translate(0,0)  ;
+    opacity: 0;
+ 
+	}
+
+
+
+
+
+ 
+}
