@@ -274,7 +274,7 @@ header{
 }
 
 .p1{
-	color: var(--primarty-color);
+	color: green;
 	position: absolute;
 	top: 1.8%;
 	left: 41%;
@@ -295,7 +295,7 @@ header{
 }
 
 .p3{
-	color: var(--primarty-color);
+	color: rgb(4, 4, 108);
 	position: absolute;
 	top: 3.5%;
 	left: 60.2%;
