@@ -786,10 +786,17 @@ header{
 /*End Sponsor Section*/
 
 /*Start Pyament Section*/
-/*
+
 .payments{
-	background:#999;
-	height: 30vh;
+	background:#ffffff;
+	height: 32vh;
+	margin-bottom: 5px;
+	border-left: 5px double #8b8888;
+	border-right: 5px double #8b8888;
+	border-radius: 50px;
+	border-bottom: 2px solid #acaaaa ;
+	/* box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.7); */
+	
 }
 
 .yus{
@@ -797,9 +804,16 @@ header{
 	margin-top: -50px;
 	font-size: 30px;
 	letter-spacing: 2px;
-	border-right: 5px solid red;
+	border-right: 5px solid rgb(172, 171, 171);
+	border-bottom: 5px solid rgb(172, 171, 171);;
 	padding:10px 20px;
-	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.7);
+	text-shadow: 0px 3px 3px rgba(147, 147, 147, 0.7);
+	transition: all .5s;
+}
+
+.yus:hover{
+	letter-spacing: 5px;
+	transform: translateX(1);
 }
 
 .banks img{
@@ -810,7 +824,7 @@ header{
 .banks img:hover{
 	transform:scale(1);
 }
-*/
+
 /*End Pyament Section*/
 
 /*Start Accessories Section*/
@@ -1248,10 +1262,6 @@ header{
     opacity: 0;
  
 	}
+}
 
-
-
-
-
- 
 }
