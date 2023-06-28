@@ -799,6 +799,14 @@ header{
 	
 }
 
+.kpay{
+	width: 80px;
+}
+
+.wm{
+	width: 150px;
+}
+
 .yus{
 	display:inline-block;
 	margin-top: -50px;
@@ -915,6 +923,51 @@ header{
 }
 
 /*End Accessories Section*/
+
+/* Start our events section */
+.o1{
+	color: green;
+	 position: absolute;
+	left: 42%;  
+	opacity: 0;
+	transform: rotate(-45deg);
+	transition: all .5s; 
+} 
+
+.o2{
+	font-size: 25px;
+	color: var(--primarty-color);
+	position: absolute;
+	padding-inline-start: 2cm; 
+	left: 45%;
+	transform: rotate(-45deg);
+	opacity:0;
+	transition: all 1s;
+}
+
+.o3{
+	color: rgb(4, 4, 108);
+	position: absolute;
+	left: 55.2%;
+	transform: rotate(45deg);
+	opacity: 0;
+	transition: all 1.5s;
+}
+
+ .our:hover .o1{
+	opacity: 1;
+} 
+.our:hover .o2{
+	opacity: 1;
+	
+}
+
+.our:hover .o3{
+	opacity: 1;
+	
+} 
+
+/* End our events section */
 
 /*Start Poem Section*/
 
@@ -1263,5 +1316,99 @@ header{
  
 	}
 }
+
+/*Start Pyament Section*/
+
+.payments{
+	background:#ffffff;
+	 height: 100vh; 
+	 margin-top: 50px;
+	margin-bottom: 5px;
+	border-left: 5px double #8b8888;
+	border-right: 5px double #8b8888;
+	border-radius: 50px;
+	border-bottom: 2px solid #acaaaa ;
+	/* box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.7); */
+	
+}
+
+.kpay{
+	width: 100px;
+}
+
+.wm{
+	width: 200px;
+}
+
+.yus{
+	display:inline-block;
+	margin-top: -25px;
+	font-size: 30px;
+	letter-spacing: 2px;
+	border-right: 5px solid rgb(172, 171, 171);
+	border-bottom: 5px solid rgb(172, 171, 171);;
+	padding:10px 20px;
+	text-shadow: 0px 3px 3px rgba(147, 147, 147, 0.7);
+	transition: all .5s;
+}
+
+.yus:hover{
+	letter-spacing: 5px;
+	transform: translateX(1);
+}
+
+.banks img{
+	transition: all .5s;
+	transform: scale(0.8);
+}
+
+.banks img:hover{
+	transform:scale(1);
+}
+
+/*End Pyament Section*/
+
+/* Start our events section */
+.o1{
+	color: green;
+	 position: absolute;
+	left: 30%;  
+	opacity: 0;
+	transform: rotate(-45deg);
+	transition: all .5s; 
+} 
+
+.o2{
+	font-size: 25px;
+	color: var(--primarty-color);
+	position: absolute;
+	padding-inline-start: 2cm; 
+	left: 30%;
+	transform: rotate(-45deg);
+	opacity:0;
+	transition: all 1s;
+}
+
+.o3{
+	color: rgb(4, 4, 108);
+	position: absolute;
+	left: 63.2%;
+	transform: rotate(45deg);
+	opacity: 0;
+	transition: all 1.5s;
+}
+
+ .our:hover .o1{
+	opacity: 1;
+} 
+.our:hover .o2{
+	opacity: 1;
+	
+}
+
+.our:hover .o3{
+	opacity: 1;
+	
+} 
 
 }
