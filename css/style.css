@@ -1220,7 +1220,7 @@ header{
 }
 
 .p1{
-	color: var(--primarty-color);
+	color: green;
 	position: absolute;
 	top:0.5%;
 	left: 29%;
@@ -1241,7 +1241,7 @@ header{
 }
 
 .p3{
-	color: var(--primarty-color);
+	color: blue;
 	position: absolute;
 	top: 1%;
 	left: 74%;
