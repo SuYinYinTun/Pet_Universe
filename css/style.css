@@ -925,6 +925,9 @@ header{
 /*End Accessories Section*/
 
 /* Start our events section */
+.ourevent{
+	background: linear-gradient(10deg,#c4e9fc,white,#d2f0ff);
+}
 .o1{
 	color: green;
 	 position: absolute;
@@ -952,6 +955,10 @@ header{
 	transform: rotate(45deg);
 	opacity: 0;
 	transition: all 1.5s;
+}
+
+.ourletter{
+	color: gray;
 }
 
  .our:hover .o1{
@@ -1007,7 +1014,7 @@ header{
   }
   @media (max-width: 768px) {
 	.card-container {
-	  width: 184px;
+	  width: 428px;
 	}
   }
   .card {
@@ -1545,5 +1552,9 @@ header{
 	opacity: 1;
 	
 } 
+
+  
+
+/* End our events section */
 
 }
