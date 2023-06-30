@@ -967,6 +967,140 @@ header{
 	
 } 
 
+/* Start .carousel-container */
+/* * {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  } */
+  img {
+	max-width: 100%;
+  }
+  .carousel-container {
+	width: 1450px;
+	margin: 50px auto;
+	position: relative;
+	border-left-width: 4px;
+	border-left-style: solid;
+	border-left-color: #aaa;
+  }
+  @media (max-width: 768px) {
+	.carousel-container {
+	  width: 95%;
+	}
+  }
+  .inner-carousel {
+	width: 100%;
+	height: 400px;
+	overflow: hidden;
+  }
+  .track {
+	display: inline-flex;
+	height: 100%;
+	transition: transform 0.2s ease-in-out;
+  }
+  .card-container {
+	width: 365px;
+	height: 400px;
+	flex-shrink: 0;
+	padding-right: 10px;
+  }
+  @media (max-width: 768px) {
+	.card-container {
+	  width: 184px;
+	}
+  }
+  .card {
+	width: 100%;
+	height: 100%;
+	/*display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;*/
+	background-position: center bottom;
+	background-size: center;
+	background-repeat: no-repeat;
+	border-radius: 10px;
+  }
+  .card1 {
+	background-image: url("../assets/img/events/OE1.jpg");
+	background-size: 455px;
+  }
+
+  .card2 {
+	background-image: url("../assets/img/events/OE6.jpg");
+	background-size: 430px;
+  }
+  .card3 {
+	background-image: url("../assets/img/events/OE14.jpg");
+	background-size: 600px;
+  }
+  .card4 {
+	background-image: url("../assets/img/events/OE5.jpeg");
+	background-size: 600px;
+  }
+  .card5 {
+	background-image: url("../assets/img/events/OE2.jpg");
+	background-size: 700px;
+  }
+  .card6 {
+	background-image: url("../assets/img/events/OE12.jpg");
+	background-size: 600px;
+  }
+  .card7 {
+	background-image: url("../assets/img/events/OE11.jpg");
+	background-size: 400px;
+  }
+  .card8 {
+	background-image: url("../assets/img/events/OE7.jpg");
+	background-size: 550px;
+  }
+  .card9 {
+	background-image: url("../assets/img/events/OE8.jpg");
+	background-size: 400px;
+  }
+  .card10 {
+	background-image: url("../assets/img/events/OE13.jpg");
+	background-size: 540px;
+  }
+  .card11 {
+	background-image: url("../assets/img/events/OE4.jpg");
+	background-size: 600px;
+  }
+  .card12 {
+	background-image: url("../assets/img/events/OE10.jpg");
+	background-size: 600px;
+  }
+  
+  .nav button {
+	position: absolute;
+	top: 50%;
+	transform: translatey(-50%);
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	outline: none;
+	border: 1px solid #000;
+	cursor: pointer;
+  }
+  .nav .prev {
+	left: -30px;
+	display: none;
+  }
+  .nav .prev.show {
+	display: block;
+  }
+  .nav .next {
+	right: -30px;
+  }
+  .nav .next.hide {
+	display: none;
+  }
+
+
+  /* end .carousel-container */
+  
+
 /* End our events section */
 
 /*Start Poem Section*/
