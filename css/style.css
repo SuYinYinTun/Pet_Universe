@@ -1311,6 +1311,11 @@ header{
 	width: 100%; 
 	position:relative; 
 }
+
+/* .sponevent2{
+	width: 1450px;
+	margin: 50px auto;
+} */
  .MultiCarousel .MultiCarousel-inner { 
 	transition: 1s ease all; 
 	float: left; 
@@ -1323,7 +1328,7 @@ header{
 .MultiCarousel .MultiCarousel-inner .item > div {
 	text-align: center; 
 	padding:0px; 
-	margin:10px; 
+	margin:5px; 
 	background:#c0c0c0; 
 	color:#010101;
 	border-radius: 30px;
@@ -1352,10 +1357,19 @@ header{
 	border-radius:50%;
 	top:calc(50% - 20px);
  }
- .MultiCarousel .leftLst { left:0; }
- .MultiCarousel .rightLst { right:0; }
+ .MultiCarousel .leftLst { 
+	left:0; 
+}
+ .MultiCarousel .rightLst { 
+	right:0; 
+}
  
-	 .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { 
+		pointer-events: none; 
+		background:#ffffff; 
+		border: 1px  solid black;
+		color: black;
+	}
 
   /* end .carousel-container */
 
