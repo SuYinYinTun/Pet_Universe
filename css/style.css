@@ -1379,6 +1379,35 @@ header{
 
 /* End Sponsor events section */
 
+/* Start our mission section */
+.ti1{
+	box-shadow: 10px 20px 5px rgba(2, 63, 1, 0.1);
+	animation: p .2s infinite linear;
+}
+
+
+@keyframes ti1{
+	from{
+  transform: translate(12px,8px) rotate(-45deg);
+	}
+	to{
+    transform: translate(-55px,-20px) rotate(-45deg);
+    opacity: 0;
+	}
+}
+
+
+@keyframes ti1{
+	from{
+  transform: scale(0);
+	}
+	to{
+    transform: scale(1.5);
+	}
+}
+
+
+/* End our mission section */
 /*Start Poem Section*/
 
 .poems{
