@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 body{
 	font-family: 'Source Sans Pro', sans-serif;
@@ -1382,32 +1383,109 @@ header{
 /* Start our mission section */
 .ti1{
 	box-shadow: 10px 20px 5px rgba(2, 63, 1, 0.1);
-	animation: p .2s infinite linear;
+	transition: all 2s;
+	width: 1200px;
+	
 }
 
-
-@keyframes ti1{
-	from{
-  transform: translate(12px,8px) rotate(-45deg);
-	}
-	to{
-    transform: translate(-55px,-20px) rotate(-45deg);
-    opacity: 0;
-	}
+.ti1:hover{
+	transform: translateY(-10px);
+	width: 1500px;
 }
 
-
-@keyframes ti1{
-	from{
-  transform: scale(0);
-	}
-	to{
-    transform: scale(1.5);
-	}
+.ourmi{
+	border: 1px solid green;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0,0.5);
+	border-top-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background: linear-gradient(30deg,rgb(141, 255, 141),white);
+	padding: 10px;
 }
 
+.ourm1{
+	font-family: 'Dancing Script', cursive;
+	font-size: 50px;
+	text-shadow: 5px 5px 10px rgb(4, 117, 4);
+
+}
+
+.ourm2{
+	font-family: 'Dancing Script', cursive;
+	font-size: 28.15px;
+	list-style: none;
+
+
+
+}
+
+.pen1{
+	animation: pen11 1s infinite linear alternate-reverse;
+  }
+  
+  @keyframes pen11{
+	  0%{
+	 transform: translate(-6px,-4px);
+	  }
+  
+	  50%{
+		  transform: translate(4px,-3px);
+	  }
+  
+	  75%{
+	  transform: translate(2px,-1px);
+	  }
+	  100%{
+	 transform: translate(0px,0px);
+	  }
+  }
+
+  /* .ourm3{
+	width: 20px; */
+	/*height: 3px;*/
+	/* background: transparent;
+	border: 5px solid rgb(0, 0, 0);
+	color: transparent;
+	border-radius: 50px; */
+	/* border-bottom: hidden; */
+	/*border-top: hidden;
+ 	border-right: hidden;
+	border-left: hidden; */
+
+	/* position: absolute;
+	 top: -9%;
+	left: 56%;
+
+	transform: rotate(-45deg); */
+/* 
+	animation: ph 2s infinite ease-in; */
+/* } */
+
+
+/* .ourm3::before{
+	content: "";
+	width: 140%;
+	height: 100%;
+		border: 1px solid white;
+		border-radius: 20px; */
+			/* border-bottom: hidden; */
+	/*border-top: hidden;
+ 	border-right: hidden;
+	border-left: hidden; */
+	
+
+	/* position: absolute; */
+	/* top: -12px;
+	left: -4px; */
+
+	/* animation: phs .8s infinite ease-in ;
+	
+
+} */
 
 /* End our mission section */
+
 /*Start Poem Section*/
 
 .poems{
