@@ -1383,35 +1383,41 @@ header{
 /* Start our mission section */
 .ti1{
 	box-shadow: 10px 20px 5px rgba(2, 63, 1, 0.1);
-	transition: all 2s;
-	width: 1200px;
-	
+	/* transition: all 2s; */
+	width: 1300px;
+	animation: ti2 1s infinite linear alternate-reverse;
+
 }
 
-.ti1:hover{
-	transform: translateY(-10px);
-	width: 1500px;
-}
+  
+@keyframes ti2 {
+	from {
+		transform: rotate(-4deg);
+	}
+	to {
+		transform: rotate(4deg);
+	}
+  }
+
 
 .ourmi{
-	border: 1px solid green;
-	/* box-shadow: 5px 5px 10px rgba(0, 0, 0,0.5); */
-	/* border-top-left-radius: 100px;
-	border-bottom-right-radius: 100px;
-	border-top-right-radius: 10px;
-	border-bottom-left-radius: 10px; */
+	/* border: 1px solid green; */
 	background-image: url("../assets/img/p1.jpg");
 	background-repeat: no-repeat;
-	background-size:450px;
-	width: 450px;
-	height: 500px;
-	padding: 10px;
+	background-size:510px;
+	width: 550px;
+	height: 620px;
+	padding-left: 30px;
+	padding-right: 80px;
+	
 }
 
 .ourm1{
 	font-family: 'Dancing Script', cursive;
 	font-size: 50px;
-	text-shadow: 5px 5px 10px rgb(4, 117, 4);
+	text-shadow: 5px 5px 10px rgb(68, 68, 68);
+	/* rotate: -5deg; */
+
 
 }
 
@@ -1420,6 +1426,8 @@ header{
 	font-size: 28.15px;
 	list-style: none;
 	text-rendering: geometricPrecision;
+	/* rotate: 2 1 1 60deg; */
+	text-shadow: 5px 5px 10px rgb(71, 71, 71);
 	
 
 
@@ -1447,49 +1455,75 @@ header{
 	  }
   }
 
-  /* .ourm3{
-	width: 20px; */
-	/*height: 3px;*/
-	/* background: transparent;
-	border: 5px solid rgb(0, 0, 0);
-	color: transparent;
-	border-radius: 50px; */
-	/* border-bottom: hidden; */
-	/*border-top: hidden;
- 	border-right: hidden;
-	border-left: hidden; */
+  .ourmi2{
+	position: relative;
+  }
 
-	/* position: absolute;
-	 top: -9%;
-	left: 56%;
+  .ourmii1{
+	position: absolute;
+	border:5px solid black;
+	transform: rotate(-25deg);
+	margin-top: 50px;
+	transition: all 0.5s;
+  }
 
-	transform: rotate(-45deg); */
-/* 
-	animation: ph 2s infinite ease-in; */
-/* } */
+ .ourmii2{
+	position: absolute;
+	z-index:1;
+	border:5px solid black;
+	bottom: 25%;
+	left: 50%;
+	transition: all 0.5s;
+  }
+  .ourmii3{
+	position: absolute;
+	transform: rotate(25deg);
+	border:5px solid black;
+	bottom: 40%;
+	left: 80%;
+	transition: all 0.5s;
+  }
+  .ourmii4{
+	position: absolute;
+	transform: rotate(60deg);
+	border:5px solid black;
+	bottom: 10%;
+	left: 100%;
+	width:300px;
+	z-index:1;
+	transition: all 0.5s;
+  }
+  .ourmii5{
+	position: absolute;
+	transform: rotate(10deg);
+	border:5px solid black;
+	bottom: 0%;
+	left: 50%;
+	z-index: 1;
+	width:300px;
+	transition: all 0.5s;
+  }
+  .ourmii6{
+	position: absolute;
+	transform: rotate(-45deg);
+	border:5px solid black;
+	bottom: 10%;
+	width:300px; 
+	transition: all 0.5s;
+  } 
 
+  .ourmii1:hover, .ourmii3:hover, .ourmii4:hover, .ourmii5:hover, .ourmii6:hover{
+	transform: translateX(100px);
+	z-index: 1;
 
-/* .ourm3::before{
-	content: "";
-	width: 140%;
-	height: 100%;
-		border: 1px solid white;
-		border-radius: 20px; */
-			/* border-bottom: hidden; */
-	/*border-top: hidden;
- 	border-right: hidden;
-	border-left: hidden; */
-	
+  }
 
-	/* position: absolute; */
-	/* top: -12px;
-	left: -4px; */
+  .ourmii2:hover{
+	transform: rotate(50deg);
+	z-index: 2;
 
-	/* animation: phs .8s infinite ease-in ;
-	
-
-} */
-
+  }
+  
 /* End our mission section */
 
 /*Start Poem Section*/
