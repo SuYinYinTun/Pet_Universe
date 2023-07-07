@@ -1395,12 +1395,16 @@ header{
 
 .ourmi{
 	border: 1px solid green;
-	box-shadow: 5px 5px 10px rgba(0, 0, 0,0.5);
-	border-top-left-radius: 100px;
+	/* box-shadow: 5px 5px 10px rgba(0, 0, 0,0.5); */
+	/* border-top-left-radius: 100px;
 	border-bottom-right-radius: 100px;
 	border-top-right-radius: 10px;
-	border-bottom-left-radius: 10px;
-	background: linear-gradient(30deg,rgb(141, 255, 141),white);
+	border-bottom-left-radius: 10px; */
+	background-image: url("../assets/img/p1.jpg");
+	background-repeat: no-repeat;
+	background-size:450px;
+	width: 450px;
+	height: 500px;
 	padding: 10px;
 }
 
@@ -1415,6 +1419,8 @@ header{
 	font-family: 'Dancing Script', cursive;
 	font-size: 28.15px;
 	list-style: none;
+	text-rendering: geometricPrecision;
+	
 
 
 
