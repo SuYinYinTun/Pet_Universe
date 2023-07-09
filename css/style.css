@@ -1533,6 +1533,56 @@ header{
   
 /* End our mission section */
 
+/* Start Our Happy Pets section */
+
+.hp1{
+	color: green;
+	 position: absolute;
+	left: 40%;  
+	opacity: 0;
+	transform: rotate(-45deg);
+	transition: all .5s; 
+} 
+
+.hp2{
+	font-size: 25px;
+	color: var(--primarty-color);
+	position: absolute;
+	padding-inline-start: 2cm; 
+	left: 45%;
+	transform: rotate(-45deg);
+	opacity:0;
+	transition: all 1s;
+}
+
+.hp3{
+	color: rgb(4, 4, 108);
+	position: absolute;
+	left: 57.5%;
+	transform: rotate(45deg);
+	opacity: 0;
+	transition: all 1.5s;
+}
+
+.hpp1{
+	text-shadow: 10px 10px 10px rgb(109, 108, 108);
+}
+
+ .hpp:hover .hp1{
+	opacity: 1;
+} 
+.hpp:hover .hp2{
+	opacity: 1;
+	
+}
+
+.hpp:hover .hp3{
+	opacity: 1;
+	
+} 
+
+/* end our happy pets section */
+
 /*Start Poem Section*/
 
 .poems{
