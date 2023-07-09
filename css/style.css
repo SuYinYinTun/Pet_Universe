@@ -1428,10 +1428,6 @@ header{
 	text-rendering: geometricPrecision;
 	/* rotate: 2 1 1 60deg; */
 	text-shadow: 5px 5px 10px rgb(71, 71, 71);
-	
-
-
-
 }
 
 .pen1{
@@ -1512,7 +1508,13 @@ header{
 	transition: all 0.5s;
   } 
 
-  .ourmii1:hover, .ourmii3:hover, .ourmii4:hover, .ourmii5:hover, .ourmii6:hover{
+  .ourmii1:hover{
+	transform: translateX(100px);
+	  z-index: 2;
+	}
+  
+
+   .ourmii4:hover, .ourmii5:hover, .ourmii6:hover{
 	transform: translateX(100px);
 	z-index: 1;
 
@@ -1523,6 +1525,11 @@ header{
 	z-index: 2;
 
   }
+  .ourmii3:hover{
+  transform: translateX(70px);
+	z-index: 3;
+  }
+
   
 /* End our mission section */
 
@@ -1979,15 +1986,32 @@ header{
 	background-image: url("../assets/img/p1.jpg");
 	background-repeat: no-repeat;
 	background-size:400px;
+	background-position-x: center;
 	width: 550px;
-	height: 800px;
-	padding-left: 30px;
-	padding-right: 80px;
+	/* height: 1000px; */
+	padding-left: 40px;
+	padding-right: 90px;
 	
 }
 
+.ourm1{
+	font-family: 'Dancing Script', cursive;
+	font-size: 38px;
+	text-shadow: 5px 5px 10px rgb(68, 68, 68);
+}
+
+.ourm2{
+	font-family: 'Dancing Script', cursive;
+	font-size: 20.1px;
+	list-style: none;
+	text-shadow: 5px 5px 10px rgb(71, 71, 71);
+
+}
+
+
 .ourmi2{
 	position: relative;
+	height: 50vh;
   }
 
   .ourmii1{
@@ -1996,6 +2020,10 @@ header{
 	transform: rotate(-25deg);
 	transition: all 0.5s;
 	margin-bottom: 100px;
+	width: 200px;
+	bottom:250px;
+	left: 40px;
+	z-index:2;
 
   }
 
@@ -2003,52 +2031,78 @@ header{
 	position: absolute;
 	z-index:1;
 	border:5px solid black;
-	bottom: 100%;
+	bottom: 380px;
+	left: 190px;
+	width: 240px;
 	transition: all 0.5s;
   }
   .ourmii3{
 	position: absolute;
-	transform: rotate(25deg);
+	transform: rotate(10deg);
 	border:5px solid black;
-	bottom: 40%;
+	bottom: 260px;
+	width: 240px;
+	left: 120px;
 	transition: all 0.5s;
+	z-index: 2;
   }
   .ourmii4{
 	position: absolute;
 	transform: rotate(60deg);
 	border:5px solid black;
-	bottom: 10%;
-	width:300px;
-	z-index:1;
+	bottom: 180px;
+	width:200px;
+	z-index:2;
+	left: 220px;
 	transition: all 0.5s;
   }
   .ourmii5{
 	position: absolute;
 	transform: rotate(10deg);
 	border:5px solid black;
-	bottom: 0%;
+	bottom: 2%;
 	z-index: 1;
-	width:300px;
+	width:220px;
+	left: 100px;
 	transition: all 0.5s;
   }
   .ourmii6{
 	position: absolute;
 	transform: rotate(-45deg);
 	border:5px solid black;
-	bottom: 10%;
-	width:300px; 
+	bottom: 120px;
+	width:250px; 
+	left: 30px;
 	transition: all 0.5s;
   } 
 
-  .ourmii1:hover, .ourmii3:hover, .ourmii4:hover, .ourmii5:hover, .ourmii6:hover{
+  .ourmii1:hover{
 	transform: translateX(100px);
-	z-index: 1;
+	z-index: 4;
+
+  }
+
+ .ourmii5:hover, .ourmii6:hover{
+	transform: translateX(100px);
+	z-index: 2;
+
+  }
+
+  .ourmii3:hover{
+	transform: translateX(100px);
+	z-index: 3;
+
+  }
+
+  .ourmii4:hover{
+	transform: translateY(100px);
+	z-index: 2;
 
   }
 
   .ourmii2:hover{
 	transform: rotate(50deg);
-	z-index: 2;
+	z-index: 3;
 
   }
 
