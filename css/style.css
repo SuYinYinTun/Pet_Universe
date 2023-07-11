@@ -952,7 +952,7 @@ header{
 .o3{
 	color: rgb(4, 4, 108);
 	position: absolute;
-	left: 55.2%;
+	left: 56%;
 	transform: rotate(45deg);
 	opacity: 0;
 	transition: all 1.5s;
@@ -974,6 +974,11 @@ header{
 	opacity: 1;
 	
 } 
+
+.ours{
+	text-shadow: 10px 10px 20px rgb(156, 156, 156);
+	letter-spacing: 2px;
+}
 
 /* Start .carousel-container */
 /* * {
@@ -1120,7 +1125,7 @@ header{
 .s1{
 	color: green;
 	 position: absolute;
-	left: 40%;  
+	left: 39%;  
 	opacity: 0;
 	transform: rotate(-45deg);
 	transition: all .5s; 
@@ -1140,7 +1145,7 @@ header{
 .s3{
 	color: rgb(4, 4, 108);
 	position: absolute;
-	left: 57.5%;
+	left: 59%;
 	transform: rotate(45deg);
 	opacity: 0;
 	transition: all 1.5s;
@@ -1148,6 +1153,12 @@ header{
 
 .ourletter{
 	color: gray;
+	word-spacing: 1px;
+	transition: all 1s;
+}
+
+.ourletter:hover{
+	word-spacing: 2px;
 }
 
  .spon:hover .s1{
@@ -1162,6 +1173,11 @@ header{
 	opacity: 1;
 	
 } 
+
+.spons{
+	text-shadow: 10px 10px 20px rgb(127, 127, 127);
+	letter-spacing: 2px;
+}
 
 /* Start .carousel-container */
   /* img {
@@ -1565,7 +1581,7 @@ header{
 }
 
 .hpp1{
-	text-shadow: 10px 10px 10px rgb(109, 108, 108);
+	text-shadow: 10px 10px 20px rgb(109, 108, 108);
 }
 
  .hpp:hover .hp1{
@@ -1580,6 +1596,15 @@ header{
 	opacity: 1;
 	
 } 
+
+.hptx{
+	color: gray;
+	transition: all 1s;
+
+}
+.hptx:hover{
+	word-spacing: 2px;
+}
 
 /* end our happy pets section */
 
@@ -1986,7 +2011,7 @@ header{
 .o1{
 	color: green;
 	 position: absolute;
-	left: 30%;  
+	left: 28%;  
 	opacity: 0;
 	transform: rotate(-45deg);
 	transition: all .5s; 
@@ -2006,7 +2031,7 @@ header{
 .o3{
 	color: rgb(4, 4, 108);
 	position: absolute;
-	left: 63.2%;
+	left: 65.5%;
 	transform: rotate(45deg);
 	opacity: 0;
 	transition: all 1.5s;
@@ -2025,9 +2050,59 @@ header{
 	
 } 
 
+.ourletter:hover{
+	word-spacing: 0px;
+}
+
   
 
 /* End our events section */
+
+/* Start sponsor events section */
+.s1{
+	color: green;
+	 position: absolute;
+	left: 20%;  
+	opacity: 0;
+	transform: rotate(-45deg);
+	transition: all .5s; 
+} 
+
+.s2{
+	font-size: 25px;
+	color: var(--primarty-color);
+	position: absolute;
+	padding-inline-start: 2cm; 
+	left: 30%;
+	transform: rotate(-45deg);
+	opacity:0;
+	transition: all 1s;
+}
+
+.s3{
+	color: rgb(4, 4, 108);
+	position: absolute;
+	left: 74%;
+	transform: rotate(45deg);
+	opacity: 0;
+	transition: all 1.5s;
+}
+
+
+ .spon:hover .s1{
+	opacity: 1;
+} 
+.spon:hover .s2{
+	opacity: 1;
+	
+}
+
+.spon:hover .s3{
+	opacity: 1;
+	
+} 
+
+/* End sponsor events section */
 
 /* Start Our Mission Section */
 
@@ -2157,5 +2232,58 @@ header{
   }
 
 /* End Our Mission Section */
+
+/* Start Our Happy Pets section */
+
+.hp1{
+	color: green;
+	 position: absolute;
+	left: 25%;  
+	opacity: 0;
+	transform: rotate(-45deg);
+	transition: all .5s; 
+} 
+
+.hp2{
+	font-size: 25px;
+	color: var(--primarty-color);
+	position: absolute;
+	padding-inline-start: 2cm; 
+	left: 30%;
+	transform: rotate(-45deg);
+	opacity:0;
+	transition: all 1s;
+}
+
+.hp3{
+	color: rgb(4, 4, 108);
+	position: absolute;
+	left: 70%;
+	transform: rotate(45deg);
+	opacity: 0;
+	transition: all 1.5s;
+}
+
+
+ .hpp:hover .hp1{
+	opacity: 1;
+} 
+.hpp:hover .hp2{
+	opacity: 1;
+	
+}
+
+.hpp:hover .hp3{
+	opacity: 1;
+	
+} 
+
+
+
+.hptx:hover{
+	word-spacing: 1px;
+}
+
+/* End Happy Our pets section */
 
 }
