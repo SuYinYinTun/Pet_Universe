@@ -1550,6 +1550,16 @@ header{
 /* End our mission section */
 
 /* Start Our Happy Pets section */
+.happypett{
+	background-image: url("../assets/img/HB3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+.happp{
+	background: rgba(189, 189, 189,0.2);
+}
 
 .hp1{
 	color: green;
@@ -1581,7 +1591,7 @@ header{
 }
 
 .hpp1{
-	text-shadow: 10px 10px 20px rgb(109, 108, 108);
+	text-shadow: 10px 10px 10px rgb(0, 0, 0);
 }
 
  .hpp:hover .hp1{
@@ -1597,15 +1607,32 @@ header{
 	
 } 
 
+
 .hptx{
-	color: gray;
+	color: rgb(255, 255, 255);
+	text-shadow: 0px 0px 5px black;
 	transition: all 1s;
+	background: rgba(189, 189, 189,0.5);
+	border-radius: 80px ;
 
 }
 .hptx:hover{
 	word-spacing: 2px;
 }
 
+.top{
+	font-size: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.bottom{
+	font-size: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 /* end our happy pets section */
 
 /*Start Poem Section*/
