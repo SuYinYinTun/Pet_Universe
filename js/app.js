@@ -348,3 +348,47 @@ $(document).ready(function () {
 
 
 //End sponsor event section
+
+
+//Start Happy Pets Section
+
+// $(document).ready(function () {
+//   // var itemsMainDiv2 = ('.MultiCarousel2');
+//   // var itemsDiv2 = ('.MultiCarousel-inner2');
+//   // var itemWidth2 = "";
+
+//   $('.htop, .hbottom').click(function () {
+//       var condition = $(this).hasClass("htop1");
+//       if (condition)
+//           click(0, this);
+//       else
+//           click(1, this);
+//   });
+
+//   ResCarouselSize2();
+//   $(window).resize(function () {
+//     ResCarouselSize2();
+// });
+
+// });
+
+$(".vdlist, .vdlist1").click(function(){
+  // console.log("hello mello");
+
+  $(this).addClass("activeitem");
+  $(this).siblings().removeClass("activeitem");
+
+
+  let getvalue = $(this).attr("data-filter");
+  
+  if(getvalue === "active"){
+     $(".filters").show("slide",500);
+  }else{
+     $(".filters").hide('slide',500);
+     $(".filters").not("."+getvalue).hide("slide",1000);
+     $(".filters").filter("."+getvalue).show("slide",1000);
+  }
+ })
+
+
+// End Happy Pets Section

@@ -1619,16 +1619,22 @@ header{
 .hptx:hover{
 	word-spacing: 2px;
 }
-
+.htop{
+	position: relative;
+}
 .htop1{
 	font-size: 50px;
 	position: absolute;
 	padding-inline-start: 2cm; 
 	color: red;
 	left: 45%;
+	top:-15px;
 	/* transform: rotate(-45deg); */
 	/* opacity:0; */
 	transition: all 1s;
+}
+.hbottom{
+	position: relative;
 }
 
 .hbottom1{
@@ -1637,7 +1643,7 @@ header{
 	padding-inline-start: 2cm; 
 	color: red;
 	left: 45%;
-	/* top:-1000px; */
+	top:500px;
 	/* transform: rotate(-45deg); */
 	/* opacity:0; */
 	transition: all 1s;
