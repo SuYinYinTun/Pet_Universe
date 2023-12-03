@@ -385,8 +385,8 @@ $(".vdlist, .vdlist1").click(function(){
      $(".filters").show("slide",500);
   }else{
      $(".filters").hide('slide',500);
-     $(".filters").not("."+getvalue).hide("slide",1000);
-     $(".filters").filter("."+getvalue).show("slide",1000);
+     $(".filters").not("."+getvalue).hide("slide",500);
+     $(".filters").filter("."+getvalue).show("slide",500);
   }
  })
 
